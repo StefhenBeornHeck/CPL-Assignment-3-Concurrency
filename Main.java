@@ -16,6 +16,7 @@ public class Main {
             Item right = items[(i + 1) % 6];
 
             if (i == items.length - 1) {
+                // Pick different order for 1 so there is no deadlock
                 wizards[i] = new Wizard(left, right);
             } else {
                 wizards[i] = new Wizard(right, left);

@@ -1,20 +1,20 @@
 public class Item {
+    // The type of this item
     private final String type;
-    private boolean pickedUp = false;
 
+    /**
+     * Default constructor.
+     * @param type The type of item ("wand" / "gem").
+     */
     public Item(String type) {
         this.type = type;
     }
 
+    /**
+     * Retrieve the type of this item.
+     * @return The type of this item.
+     */
     public String getType() {
         return type;
-    }
-
-    public void pickUp() {
-        pickedUp = true;
-    }
-
-    public void putDown() {
-        pickedUp = false;
     }
 }
