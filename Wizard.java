@@ -1,4 +1,4 @@
-class Wizard extends Main implements Runnable {
+class Wizard implements Runnable {
     // How many spells the Wizard has casted
     private int castedSpells = 0;
     // The item at the left-side of the Wizard
