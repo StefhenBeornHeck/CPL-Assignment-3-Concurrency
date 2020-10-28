@@ -10,19 +10,11 @@ public class Item {
         return type;
     }
 
-    public boolean isWand() {
-        return getType().equals("wand");
+    public void pickUp() {
+        pickedUp = true;
     }
 
-    public boolean isGem() {
-        return getType().equals("gem");
-    }
-
-    public boolean isPickedUp() {
-        return pickedUp;
-    }
-
-    public void setPickedUp(boolean isPickedUp) {
-        this.pickedUp = isPickedUp;
+    public void putDown() {
+        pickedUp = false;
     }
 }

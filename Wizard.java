@@ -1,8 +1,4 @@
-class Wizard extends Council implements Runnable  {
-    // Whether the Wizard has a wand in a hand
-    private boolean hasWand = false;
-    // Whether the Wizard has a gem in a hand
-    private boolean hasGem = false;
+class Wizard extends Main implements Runnable  {
     // How many spells the Wizard has casted
     private int castedSpells = 0;
     // The state of the Wizard
@@ -11,6 +7,8 @@ class Wizard extends Council implements Runnable  {
     private final Item left;
     // The item at the right-side of the Wizard
     private final Item right;
+    // Duration of the actions
+    private final int ACTION_DURATION = 1000;
 
     public Wizard(Item left, Item right) {
         this.left = left;
@@ -18,69 +16,43 @@ class Wizard extends Council implements Runnable  {
     }
 
     public void run() {
-        printState();
         while (castedSpells < 3) {
+            state = "Deliberating";
+            printState();
             try {
-                castSpell();
-            } catch (InterruptedException ignored) {
+                synchronized (left) {
+                    pickUp(left);
+                    synchronized (right) {
+                        pickUp(right);
+                        castSpell();
+                        left.putDown();
+                        right.putDown();
+                    }
+                    state = "Deliberating";
+                    printState();
+                }
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                return;
             }
         }
     }
 
-    public synchronized void castSpell() throws InterruptedException {
-        if (hasWand && hasGem) {
-            System.out.println("Casting spell");
-            putDownGem();
-            putDownWand();
-            castedSpells++;
-            Thread.sleep(1000);
-        } else {
-            grabWand();
-            grabGem();
-        }
-    }
-
-    public synchronized void grabWand() throws InterruptedException {
-        state = "Grabbing wand";
-        Item wand = left.isWand() ? left : right;
-        if (!wand.isPickedUp()) {
-            hasWand = true;
-            wand.setPickedUp(true);
-        }
+    public void pickUp(Item item) throws InterruptedException {
+        item.pickUp();
+        state = "Grabbing " + item.getType();
         printState();
-        Thread.sleep(1000);
+        Thread.sleep(ACTION_DURATION);
     }
 
-    public synchronized void putDownWand() throws InterruptedException {
-        state = "Putting down wand";
-        Item wand = left.isWand() ? left : right;
-        wand.setPickedUp(false);
-        hasWand = false;
+    public void castSpell() throws InterruptedException {
+        state = "Casting spell";
         printState();
-        Thread.sleep(1000);
+        castedSpells++;
+        Thread.sleep(ACTION_DURATION);
     }
 
-    public synchronized void grabGem() throws InterruptedException {
-        state = "Grabbing gem";
-        Item gem = left.isGem() ? left : right;
-        if (!gem.isPickedUp()) {
-            hasGem = true;
-            gem.setPickedUp(true);
-        }
-        printState();
-        Thread.sleep(1000);
-    }
-
-    public synchronized void putDownGem() throws InterruptedException {
-        state = "Putting down gem";
-        Item gem = left.isGem() ? left : right;
-        gem.setPickedUp(false);
-        hasGem = false;
-        printState();
-        Thread.sleep(1000);
-    }
-
-    public synchronized void printState() {
-        System.out.println(state);
+    public void printState() {
+        System.out.println(Thread.currentThread().getName() + " " + state);
     }
 }
