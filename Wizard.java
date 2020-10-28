@@ -1,8 +1,6 @@
 class Wizard extends Main implements Runnable {
     // How many spells the Wizard has casted
     private int castedSpells = 0;
-    // The state of the Wizard
-    private String state = "Deliberating";
     // The item at the left-side of the Wizard
     private final Item left;
     // The item at the right-side of the Wizard
@@ -23,8 +21,7 @@ class Wizard extends Main implements Runnable {
     @Override
     public void run() {
         while (castedSpells < 3) {
-            state = "Deliberating";
-            printState();
+            printState("Deliberating");
             try {
                 synchronized (left) {
                     pickUp(left);
@@ -32,8 +29,7 @@ class Wizard extends Main implements Runnable {
                         pickUp(right);
                         castSpell();
                     }
-                    state = "Deliberating";
-                    printState();
+                    printState("Deliberating");
                 }
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
@@ -48,8 +44,7 @@ class Wizard extends Main implements Runnable {
      * @throws InterruptedException If Thread.sleep throws anything.
      */
     public void pickUp(Item item) throws InterruptedException {
-        state = "Grabbing " + item.getType();
-        printState();
+        printState("Grabbing " + item.getType());
         Thread.sleep(ACTION_DURATION);
     }
 
@@ -58,16 +53,16 @@ class Wizard extends Main implements Runnable {
      * @throws InterruptedException If Thread.sleep throws anything.
      */
     public void castSpell() throws InterruptedException {
-        state = "Casting spell";
-        printState();
+        printState("Casting spell");
         castedSpells++;
         Thread.sleep(ACTION_DURATION);
     }
 
     /**
      * Print the state of the wizard.
+     * @param state The state of the wizard.
      */
-    public void printState() {
+    public void printState(String state) {
         System.out.println(Thread.currentThread().getName() + " " + state);
     }
 }
