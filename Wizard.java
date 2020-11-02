@@ -14,6 +14,7 @@ class Wizard implements Runnable {
 
     /**
      * Default constructor.
+     *
      * @param left  The item at the left-side.
      * @param right The item at the right-side.
      */
@@ -50,6 +51,7 @@ class Wizard implements Runnable {
 
     /**
      * Pick up an item.
+     *
      * @param item The item to pickup.
      * @throws InterruptedException If Thread.sleep throws anything.
      */
@@ -61,6 +63,7 @@ class Wizard implements Runnable {
 
     /**
      * Put down an item.
+     *
      * @param item The item to pickup.
      * @throws InterruptedException If Thread.sleep throws anything.
      */
@@ -72,6 +75,7 @@ class Wizard implements Runnable {
 
     /**
      * Cast a spell.
+     *
      * @throws InterruptedException If Thread.sleep throws anything.
      */
     public void castSpell() throws InterruptedException {
@@ -81,9 +85,10 @@ class Wizard implements Runnable {
     }
 
     /**
-      * Print action by the wizard.
-      * @param action The action of the wizard.
-      */
+     * Print action by the wizard.
+     *
+     * @param action The action of the wizard.
+     */
     public void printAction(String action) {
         System.out.println(Thread.currentThread().getName() + " " + action);
     }
@@ -92,20 +97,10 @@ class Wizard implements Runnable {
      * Print the state of the wizard.
      */
     public void printState() {
-        String left = "";
-        if (this.leftHeld) {
-            left = "Holding ";
-        } else {
-            left = "Not holding ";
-        }
+        String left = this.leftHeld ? "Holding " : "Not holding ";
         left += this.left.getType(); // Thread safe as the type of an item never changes
 
-        String right = "";
-        if (this.rightHeld) {
-            right = "Holding ";
-        } else {
-            right = "Not holding ";
-        }
+        String right = this.rightHeld ? "Holding " : "Not holding ";
         right += this.right.getType(); // Thread safe as the type of an item never changes
 
         System.out.println(Thread.currentThread().getName() + " " + left + "; " + right);
