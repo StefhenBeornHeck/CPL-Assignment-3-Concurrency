@@ -4,11 +4,11 @@ class Wizard implements Runnable {
     // The item at the left-side of the Wizard
     private final Item left;
     // Is the item at the left-side of the Wizard held by this Wizard?
-    private boolean left_held = false;
+    private boolean leftHeld = false;
     // The item at the right-side of the Wizard
     private final Item right;
     // Is the item at the right-side of the Wizard held by this Wizard?
-    private boolean right_held = false;
+    private boolean rightHeld = false;
     // Duration of the actions
     private final int ACTION_DURATION = 1000;
 
@@ -29,16 +29,16 @@ class Wizard implements Runnable {
             try {
                 synchronized (left) {
                     pickUp(left);
-                    this.left_held = true;
+                    this.leftHeld = true;
                     synchronized (right) {
                         pickUp(right);
-                        this.right_held = true;
+                        this.rightHeld = true;
                         castSpell();
                         putDown(right);
-                        this.right_held = false;
+                        this.rightHeld = false;
                     }
                     putDown(left);
-                    this.left_held = true;
+                    this.leftHeld = true;
                 }
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
@@ -81,7 +81,7 @@ class Wizard implements Runnable {
     }
 
     /**
-      * Print action by the wizar
+      * Print action by the wizard.
       * @param action The action of the wizard.
       */
     public void printAction(String action) {
@@ -93,7 +93,7 @@ class Wizard implements Runnable {
      */
     public void printState() {
         String left = "";
-        if (this.left_held) {
+        if (this.leftHeld) {
             left = "Holding ";
         } else {
             left = "Not holding ";
@@ -101,7 +101,7 @@ class Wizard implements Runnable {
         left += this.left.getType(); // Thread safe as the type of an item never changes
 
         String right = "";
-        if (this.right_held) {
+        if (this.rightHeld) {
             right = "Holding ";
         } else {
             right = "Not holding ";
