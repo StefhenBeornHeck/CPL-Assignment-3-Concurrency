@@ -1,0 +1,186 @@
+Wizard 0 Deliberating
+Wizard 2 Deliberating
+Wizard 2 Grabbing wand
+Wizard 4 Deliberating
+Wizard 4 Grabbing wand
+Wizard 1 Deliberating
+Wizard 1 Grabbing gem
+Wizard 5 Deliberating
+Wizard 3 Deliberating
+Wizard 3 Grabbing gem
+Wizard 0 Grabbing wand
+Wizard 2 Not holding wand; Not holding gem
+Wizard 4 Not holding wand; Not holding gem
+Wizard 1 Not holding gem; Not holding wand
+Wizard 3 Not holding gem; Not holding wand
+Wizard 0 Not holding wand; Not holding gem
+Wizard 0 Grabbing gem
+Wizard 0 Holding wand; Not holding gem
+Wizard 0 Cast spell: Estu mia metilernanto
+Wizard 0 Putting down gem
+Wizard 0 Holding wand; Holding gem
+Wizard 0 Putting down wand
+Wizard 0 Holding wand; Not holding gem
+Wizard 0 Deliberating
+Wizard 1 Grabbing wand
+Wizard 1 Holding gem; Not holding wand
+Wizard 1 Cast spell: Estu mia metilernanto
+Wizard 1 Putting down wand
+Wizard 1 Holding gem; Holding wand
+Wizard 1 Putting down gem
+Wizard 0 Grabbing wand
+Wizard 0 Holding wand; Not holding gem
+Wizard 0 Grabbing gem
+Wizard 1 Holding gem; Not holding wand
+Wizard 1 Deliberating
+Wizard 2 Grabbing gem
+Wizard 0 Holding wand; Not holding gem
+Wizard 0 Cast spell: Estu mia metilernanto
+Wizard 2 Holding wand; Not holding gem
+Wizard 2 Cast spell: Estu mia metilernanto
+Wizard 0 Putting down gem
+Wizard 2 Putting down gem
+Wizard 0 Holding wand; Holding gem
+Wizard 0 Putting down wand
+Wizard 2 Holding wand; Holding gem
+Wizard 2 Putting down wand
+Wizard 1 Grabbing gem
+Wizard 0 Holding wand; Not holding gem
+Wizard 0 Deliberating
+Wizard 0 Grabbing wand
+Wizard 1 Holding gem; Not holding wand
+Wizard 2 Holding wand; Not holding gem
+Wizard 2 Deliberating
+Wizard 3 Grabbing wand
+Wizard 0 Holding wand; Not holding gem
+Wizard 0 Grabbing gem
+Wizard 3 Holding gem; Not holding wand
+Wizard 3 Cast spell: Estu mia metilernanto
+Wizard 0 Holding wand; Not holding gem
+Wizard 0 Cast spell: Estu mia metilernanto
+Wizard 3 Putting down wand
+Wizard 0 Putting down gem
+Wizard 3 Holding gem; Holding wand
+Wizard 3 Putting down gem
+Wizard 2 Grabbing wand
+Wizard 0 Holding wand; Holding gem
+Wizard 3 Holding gem; Not holding wand
+Wizard 3 Deliberating
+Wizard 2 Holding wand; Not holding gem
+Wizard 4 Grabbing gem
+Wizard 0 Putting down wand
+Wizard 4 Holding wand; Not holding gem
+Wizard 4 Cast spell: Estu mia metilernanto
+Wizard 0 Holding wand; Not holding gem
+Wizard 0 Done
+Wizard 1 Grabbing wand
+Wizard 4 Putting down gem
+Wizard 1 Holding gem; Not holding wand
+Wizard 1 Cast spell: Estu mia metilernanto
+Wizard 4 Holding wand; Holding gem
+Wizard 3 Grabbing gem
+Wizard 4 Putting down wand
+Wizard 1 Putting down wand
+Wizard 4 Holding wand; Not holding gem
+Wizard 3 Holding gem; Not holding wand
+Wizard 5 Grabbing wand
+Wizard 4 Deliberating
+Wizard 1 Holding gem; Holding wand
+Wizard 1 Putting down gem
+Wizard 5 Not holding wand; Not holding gem
+Wizard 5 Grabbing gem
+Wizard 1 Holding gem; Not holding wand
+Wizard 1 Deliberating
+Wizard 2 Grabbing gem
+Wizard 5 Holding wand; Not holding gem
+Wizard 5 Cast spell: Estu mia metilernanto
+Wizard 2 Holding wand; Not holding gem
+Wizard 2 Cast spell: Estu mia metilernanto
+Wizard 5 Putting down gem
+Wizard 2 Putting down gem
+Wizard 5 Holding wand; Holding gem
+Wizard 5 Putting down wand
+Wizard 2 Holding wand; Holding gem
+Wizard 1 Grabbing gem
+Wizard 2 Putting down wand
+Wizard 5 Holding wand; Not holding gem
+Wizard 5 Deliberating
+Wizard 4 Grabbing wand
+Wizard 1 Holding gem; Not holding wand
+Wizard 1 Grabbing wand
+Wizard 2 Holding wand; Not holding gem
+Wizard 2 Deliberating
+Wizard 3 Grabbing wand
+Wizard 4 Holding wand; Not holding gem
+Wizard 1 Holding gem; Not holding wand
+Wizard 1 Cast spell: Estu mia metilernanto
+Wizard 3 Holding gem; Not holding wand
+Wizard 3 Cast spell: Estu mia metilernanto
+Wizard 1 Putting down wand
+Wizard 3 Putting down wand
+Wizard 1 Holding gem; Holding wand
+Wizard 1 Putting down gem
+Wizard 3 Holding gem; Holding wand
+Wizard 2 Grabbing wand
+Wizard 3 Putting down gem
+Wizard 1 Holding gem; Not holding wand
+Wizard 1 Done
+Wizard 3 Holding gem; Not holding wand
+Wizard 2 Holding wand; Not holding gem
+Wizard 2 Grabbing gem
+Wizard 4 Grabbing gem
+Wizard 3 Deliberating
+Wizard 4 Holding wand; Not holding gem
+Wizard 2 Holding wand; Not holding gem
+Wizard 4 Cast spell: Estu mia metilernanto
+Wizard 2 Cast spell: Estu mia metilernanto
+Wizard 4 Putting down gem
+Wizard 2 Putting down gem
+Wizard 4 Holding wand; Holding gem
+Wizard 4 Putting down wand
+Wizard 3 Grabbing gem
+Wizard 2 Holding wand; Holding gem
+Wizard 2 Putting down wand
+Wizard 4 Holding wand; Not holding gem
+Wizard 4 Deliberating
+Wizard 5 Grabbing wand
+Wizard 3 Holding gem; Not holding wand
+Wizard 2 Holding wand; Not holding gem
+Wizard 2 Done
+Wizard 3 Grabbing wand
+Wizard 5 Holding wand; Not holding gem
+Wizard 5 Grabbing gem
+Wizard 3 Holding gem; Not holding wand
+Wizard 3 Cast spell: Estu mia metilernanto
+Wizard 5 Holding wand; Not holding gem
+Wizard 5 Cast spell: Estu mia metilernanto
+Wizard 3 Putting down wand
+Wizard 3 Holding gem; Holding wand
+Wizard 3 Putting down gem
+Wizard 5 Putting down gem
+Wizard 3 Holding gem; Not holding wand
+Wizard 3 Done
+Wizard 5 Holding wand; Holding gem
+Wizard 5 Putting down wand
+Wizard 5 Holding wand; Not holding gem
+Wizard 5 Deliberating
+Wizard 4 Grabbing wand
+Wizard 4 Holding wand; Not holding gem
+Wizard 4 Grabbing gem
+Wizard 4 Holding wand; Not holding gem
+Wizard 4 Cast spell: Estu mia metilernanto
+Wizard 4 Putting down gem
+Wizard 4 Holding wand; Holding gem
+Wizard 4 Putting down wand
+Wizard 4 Holding wand; Not holding gem
+Wizard 4 Done
+Wizard 5 Grabbing wand
+Wizard 5 Holding wand; Not holding gem
+Wizard 5 Grabbing gem
+Wizard 5 Holding wand; Not holding gem
+Wizard 5 Cast spell: Estu mia metilernanto
+Wizard 5 Putting down gem
+Wizard 5 Holding wand; Holding gem
+Wizard 5 Putting down wand
+Wizard 5 Holding wand; Not holding gem
+Wizard 5 Done

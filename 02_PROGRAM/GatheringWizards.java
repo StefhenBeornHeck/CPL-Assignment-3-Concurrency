@@ -1,4 +1,12 @@
-public class Main {
+/**
+ * Compile
+ *  - javac GatheringWizards.java
+ *
+ * Run
+ *  - java GatheringWizards
+ */
+
+public class GatheringWizards {
     public static void main(String[] args) {
         Wizard[] wizards = new Wizard[6];
         Item[] items = new Item[]{
