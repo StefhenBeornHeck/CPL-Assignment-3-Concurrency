@@ -10,7 +10,7 @@ class Wizard implements Runnable {
     // Is the item at the right-side of the Wizard held by this Wizard?
     private boolean rightHeld = false;
     // Duration of the actions
-    private final int ACTION_DURATION = 1000;
+    private final int ACTION_DURATION = 500;
 
     /**
      * Default constructor.
@@ -79,7 +79,7 @@ class Wizard implements Runnable {
      * @throws InterruptedException If Thread.sleep throws anything.
      */
     public void castSpell() throws InterruptedException {
-        printAction("Casting spell");
+        printAction("Cast spell: Estu mia metilernanto");
         castedSpells++;
         Thread.sleep(ACTION_DURATION);
     }
